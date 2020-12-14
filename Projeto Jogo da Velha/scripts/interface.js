@@ -6,19 +6,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handleClick(event) {
-    let square = event.target;
-    let position = square.id;
-    handleMove(position);
-    updateSquares();
+    if (handleMove(event.target.id)) {
+        setTimeout(() => {
+            alert("O jogo acabou. O vencedor foi o jogador " + playerTime);
+        }, 30);
+    };
+    updateSquare(event.target.id);
 }
 
-function updateSquares() {
+function updateSquare(position) {
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];
+    square.innerHTML = `<div class='${symbol}'></div>`;
+}
+
+function updateAllSquares() {
     let squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
-        let position = square.id;
-        let symbol = board[position];
+        let symbol = board[square.id];
+
         if (symbol != '') {
-            square.innerHTML = `<div class='${symbol}'></div>`;
+            square.innerHTML = '';
         }
     })
 }
