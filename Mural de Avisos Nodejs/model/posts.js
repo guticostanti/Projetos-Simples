@@ -3,7 +3,7 @@ module.exports = {
     posts: [
         {
             id: "asdfawsd",
-            title: "teste",
+            title: "Teste do Mural",
             description: "Descrição teste"
         }, 
     ],
