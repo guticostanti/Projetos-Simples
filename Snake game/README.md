@@ -4,7 +4,7 @@
 
 
 <div align="center" >
-  <img src="./gifs/snak-game.gif" alt="demo-web">
+  <img src="./gifs/snake-game.gif" alt="demo">
 </div>
 
 <hr />
@@ -21,4 +21,4 @@ This project was developed with the following technologies:
 - ✔️ Javascript
 
 
-Made by: guticostatni :wave: [Get in touch!](https://www.linkedin.com/in/gustavo-costanti-lara-772a47197/)
+Made by: guticostanti :wave: [Get in touch!](https://www.linkedin.com/in/gustavo-costanti-lara-772a47197/)
